@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo2 - Go Web Server</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .welcome {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .info-box h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .info-box p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .feature p {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .gopher {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="gopher">🐹</div>
+        <h1>欢迎使用 Demo2</h1>
+        <p class="welcome">这是一个使用 Go 标准库 net/http 创建的简单 Web 服务器</p>
+
+        <div class="info-box">
+            <h2>🎉 服务器运行成功！</h2>
+            <p>恭喜！您的 Go Web 服务已经成功启动并正在运行。</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>📡 标准库</h3>
+                <p>使用 Go 标准库 net/http 构建，无需额外依赖</p>
+            </div>
+            <div class="feature">
+                <h3>🚀 高性能</h3>
+                <p>轻量级、高并发的 Web 服务器</p>
+            </div>
+            <div class="feature">
+                <h3>💡 简单易用</h3>
+                <p>清晰的代码结构，易于理解和扩展</p>
+            </div>
+            <div class="feature">
+                <h3>🛠️ HTTP 路由</h3>
+                <p>灵活的 HTTP 路由和处理器功能</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Powered by Go & net/http | Demo2 Project</p>
+        </footer>
+    </div>
+</body>
+</html>
